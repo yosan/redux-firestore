@@ -8,6 +8,7 @@ import {
   errorsReducer,
   queriesReducer,
   crossSliceReducer,
+  mockReducer
 } from './reducers';
 
 /**
@@ -29,7 +30,7 @@ const combinedReducers = combineReducers({
   listeners: listenersReducer,
   errors: errorsReducer,
   queries: queriesReducer,
-  composite: state => state, // mock reducer to retain info created by cross slice reducer
+  composite: mockReducer, // mock reducer to retain info created by cross slice reducer
 });
 
 export default reduceReducers(combinedReducers, crossSliceReducer);
