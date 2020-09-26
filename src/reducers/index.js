@@ -5,6 +5,7 @@ import orderedReducer from './orderedReducer';
 import statusReducer from './statusReducer';
 import queriesReducer from './queriesReducer';
 import crossSliceReducer from './crossSliceReducer';
+import mockReducer from './mockReducer';
 
 export {
   dataReducer,
@@ -14,6 +15,7 @@ export {
   statusReducer,
   queriesReducer,
   crossSliceReducer,
+  mockReducer,
 };
 
 export default {
@@ -24,4 +26,5 @@ export default {
   statusReducer,
   queriesReducer,
   crossSliceReducer,
+  mockReducer,
 };
